@@ -1,0 +1,56 @@
+.slide {
+    position: relative;
+    width: 590px;
+}
+.slide-image {
+    display: none;
+}
+/*slide-image*/
+.active {
+    display: inline-block;
+}
+.slide-button {
+    height: 50px;
+    width: 30px;
+    background: black;
+    opacity: 0.3;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+/*
+.vertical-center 用来垂直居中一个元素
+*/
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slide-indicators {
+    /*position: relative;
+    bottom: 30px;
+    text-align: center;*/
+    position: absolute;
+    /* left 是相对父元素来移动的 */
+    left: 50%;
+    bottom: 30px;
+    text-align: center;
+    /* translate 是相对元素本身来移动的 */
+    transform: translateX(-50%);
+}
+.slide-indi {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+}
+.white {
+    background: white;
+}
